@@ -1,0 +1,49 @@
+.chat_message {
+  display: flex;
+  flex-direction: column;
+  background: #cfe7e9;
+
+  .chat_date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #b4d3d6;
+    max-width: fit-content;
+    margin: 30px auto;
+    padding: 10px 24px;
+    border-radius: 29px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    -o-border-radius: 29px;
+    color: #6e8699;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+  }
+  .list_message {
+    .item_message {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .chat_message {
+    .chat_date {
+      margin: 15px auto;
+      font-size: 12px;
+    }
+    .list_message {
+      .item_message {
+        padding: 0 15px;
+      }
+    }
+  }
+}

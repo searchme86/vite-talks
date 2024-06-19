@@ -1,0 +1,19 @@
+.chat_top {
+  width: 100%;
+  background: #2f3a56;
+  .chat_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat_top {
+    .chat_navigation {
+      padding-right: 15px;
+    }
+  }
+}

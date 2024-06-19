@@ -1,0 +1,65 @@
+.tab_panel {
+  height: 100%;
+  background: #fff;
+  .list_tabPanel {
+    .item_tabPanel {
+      background: #fff;
+      border-bottom: 1px solid #d8e8ed;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+      .section_chatRoom {
+        .link_chatRoom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 48px 30px;
+          .title_chatRoom {
+            display: block;
+            color: #1f1f1f;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+          }
+          .count_message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e15554;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            font-size: 24px;
+            font-weight: 400;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tab_panel {
+    .list_tabPanel {
+      .item_tabPanel {
+        .section_chatRoom {
+          .link_chatRoom {
+            padding: 24px 15px;
+            .title_chatRoom {
+              font-size: 16px;
+            }
+            .count_message {
+              width: 16px;
+              height: 16px;
+              padding: 10px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

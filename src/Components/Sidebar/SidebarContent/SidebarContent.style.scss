@@ -1,0 +1,46 @@
+.list_chatMenu {
+  margin-top: 20px;
+  .item_sideBarMenu {
+    color: #4a4a4a;
+    font-size: 32px;
+    .button_sideBarMenu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 26px 0 26px 6px;
+      box-sizing: border-box;
+      .image_sideBarIcon {
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+      }
+      .text_sideBar {
+        color: #4a4a4a;
+        font-size: 32px;
+        font-weight: 400;
+      }
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #d8e8ed;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .list_chatMenu {
+    .item_sideBarMenu {
+      .button_sideBarMenu {
+        padding: 13px 0 13px 3px;
+        .image_sideBarIcon {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+        .text_sideBar {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

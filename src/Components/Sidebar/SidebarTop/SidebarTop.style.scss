@@ -1,0 +1,30 @@
+.sidebar_info {
+  padding-top: 40px;
+  .sidebar_text {
+    color: #1f2024;
+    font-size: 32px;
+    font-weight: 400;
+    .text_roomCategory,
+    .text_roomTitle {
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  .text_chatDate {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar_info {
+    padding-top: 20px;
+    .sidebar_text {
+      font-size: 16px;
+    }
+    .text_chatDate {
+      font-size: 12px;
+    }
+  }
+}

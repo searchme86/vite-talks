@@ -1,0 +1,26 @@
+.list_files {
+  background: #fff;
+  height: 100%;
+  .item_files {
+    .text_savedDate {
+      background: #f1f5f8;
+      padding: 16px 0;
+      box-sizing: border-box;
+      color: #1f2024;
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .list_files {
+    .item_files {
+      .text_savedDate {
+        padding: 8px 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

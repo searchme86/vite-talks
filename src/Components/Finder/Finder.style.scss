@@ -1,0 +1,27 @@
+.finder {
+  background: #f1f5f8;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  .inputBox.searchFinder {
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    .searchInput {
+      width: calc(100% - 60px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .finder {
+    padding: 15px 20px;
+    .inputBox.searchFinder {
+      .button_showBox {
+        width: 30px;
+        height: 30px;
+      }
+      .searchInput {
+        width: 100%;
+      }
+    }
+  }
+}

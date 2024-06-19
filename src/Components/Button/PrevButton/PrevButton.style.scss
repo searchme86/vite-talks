@@ -1,0 +1,36 @@
+.section_indicator {
+  padding: 44px 0 44px 30px;
+  width: calc(100% - 220px);
+  display: flex;
+  .link_prevPage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .button__prevPage {
+      width: 40px;
+    }
+  }
+  .text_chatTitle {
+    display: inline-flex;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_indicator {
+    padding: 22px 0 22px 15px;
+    width: auto;
+    .link_prevPage {
+      .button__prevPage {
+        width: 20px;
+        margin-right: 6px;
+      }
+    }
+    .text_chatTitle {
+      font-size: 16px;
+    }
+  }
+}
