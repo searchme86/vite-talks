@@ -14,7 +14,8 @@ function InputBox({
   isButtonExist,
 }) {
   const [showAnimation, setShowAnimationOverlay] = useState(false);
-  const [debouncedUserInputValue, setDebouncedUserInputValue] = useState(""); // 추가된 상태
+  const [userInputValue, setUserInputValue] = useState("");
+  const [debouncedUserInputValue, setDebouncedUserInputValue] = useState("");
   const className = isRectangle ? "searchFinder" : "";
 
   const handleButtonClick = () => {
@@ -29,6 +30,8 @@ function InputBox({
        * debouncedUserInputValue는 유저가 인풋창에 메세지로 입력한 값
        * 요청할 때 태워서 보낼 로직을 작성할 곳
        */
+      setUserInputValue(""); // 추가된 로직
+      setDebouncedUserInputValue(""); // 추가된 로직
     } else {
       console.log("버튼을 클릭하였으나, 입력된 메시지가 없음");
       /**
@@ -51,6 +54,8 @@ function InputBox({
         inputTitle={title}
         placeHolderValue={placeholder}
         currentInputValue=""
+        userInputValue={userInputValue}
+        setUserInputValue={setUserInputValue}
         setDebouncedUserInputValue={setDebouncedUserInputValue}
       />
       {isButtonExist && (

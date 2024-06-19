@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import useDebounce from "./useDebounce";
 import "./SearchForm.style.scss";
 
 function SearchForm({
   inputTitle,
   placeHolderValue,
-  currentInputValue,
+  userInputValue,
+  setUserInputValue,
   setDebouncedUserInputValue,
 }) {
-  const [userInputValue, setUserInputValue] = useState(currentInputValue || "");
-
   /**
    * debouncedUserInputValue
    * 유저가 입력한 텍스트 value를 참조함
@@ -35,7 +34,7 @@ function SearchForm({
       if (debouncedUserInputValue) {
         console.log("유저가 엔터키를 눌렀고, 메세지가 있을 경우 입니다.");
         console.log(`입력된 메세지 : ${debouncedUserInputValue}`);
-        // API 호출 등 추가 동작을 작성해주세요
+        // 여기에 API 호출 등 추가 동작을 작성해주세요
         setUserInputValue("");
       } else {
         console.log("유저가 엔터키를 눌렀지만, 메세지가 없는 경우 입니다.");
