@@ -1,15 +1,18 @@
 .chat_bottom {
   z-index: 2;
   position: fixed;
+  left: 50%;
   bottom: 0;
-  width: 100%;
+  width: 750px;
   background: #cfe7e9;
   padding: 32px 30px;
   box-sizing: border-box;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
   .chat_bottom {
+    width: 375px;
     padding: 16px 15px;
   }
 }
