@@ -1,8 +1,10 @@
 .chat_message {
   display: flex;
   flex-direction: column;
-  max-height: 800px;
   background: #cfe7e9;
+  max-height: 800px;
+  padding-bottom: 78px;
+  box-sizing: border-box;
   overflow: scroll;
 
   .chat_date {
