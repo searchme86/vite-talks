@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "./../Image/Image";
 import SearchForm from "./../SearchForm/SearchForm";
 import "./InputBox.style.scss";
