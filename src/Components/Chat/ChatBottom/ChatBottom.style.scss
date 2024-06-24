@@ -1,12 +1,14 @@
 .chat_bottom {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   left: 50%;
   bottom: 0;
-  width: 750px;
   background: #cfe7e9;
+  width: 750px;
   padding: 32px 30px;
   box-sizing: border-box;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
   transform: translateX(-50%);
 }
 
